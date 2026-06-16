@@ -8,6 +8,7 @@
         <header>
             <h1>DELTARUNE</h1>
             <h2>Completionist Tracker</h2>
+            <h5>MAJOR SPOILERS AHEAD</h5>
             <nav class="chapter-select">
                 <h3>Chapter 1</h3>
                 <h3>Chapter 2</h3>
@@ -19,458 +20,490 @@
         <main>
             <section class="chapter-1">
                 <h3>Chapter 1</h3>
-                <section class="??????">
-                    <h4>??????</h4>
+                <section class="consumable">
+                    <h4>Consumables</h4>
+                    <aside>WARNING! Do NOT pick Dark Candy from the Dark Candy tree in Field if you intend to go for the AncientSweet!
+                        This choice will be remembered!</aside>
                     <label>
-                        <input type="checkbox" class="misc" id="item1">
-                        Glowshard
-                    </label>
-                </section>
-                <section class="field">
-                    <h4>Field</h4>
-                    <aside>WARNING! If you are intending on going for the AncientSweet, 
-                        it is important not to pick Dark Candy from the Dark Candy tree in this area. This choice will be remembered.</aside>
-                    <label>
-                        <input type="checkbox" class="key" id="item2">
-                        Broken Cake
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item3">
-                        White Ribbon
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item4">
-                        Amber Cards (2+ for Silver Card)
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item5">
-                        Spookysword
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item6">
-                        Broken Key C (DHCS)
-                    </label>
-                    <label>
-                        <input type="checkbox" class="consumable" id="item7">
-                        Spin Cake
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item8">
-                        Broken Key A (Seam)
-                    </label>
-                </section>
-                <section class="forest">
-                    <h4>Forest</h4>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item9">
-                        Ragger
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item10">
-                        Dice Brace
-                    </label>
-                    <label>
-                        <input type="checkbox" class="consumable" id="item11">
+                        <input type="checkbox" class="consumable forest" id="item1-1">
                         Top Cake
                     </label>
                     <label>
-                        <input type="checkbox" class="consumable" id="item12">
+                        <input type="checkbox" class="consumable forest" id="item1-2">
                         ReviveMint
                     </label>
                     <label>
-                        <input type="checkbox" class="key" id="item13">
-                        Broken Key B (starless path)
+                        <input type="checkbox" class="consumable forest" id="item1-3">
+                        ReviveMint
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item14">
-                        The original &emsp;Starwalker
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item15">
-                        Egg (dark tree -> starwalker bird)
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item16">
-                        Door Key
+                        <input type="checkbox" class="consumable field" id="item1-4">
+                        Spin Cake
                     </label>
                 </section>
-                <section class="castle">
-                    <h4>Card Castle</h4>
+                <section class="weapon">
+                    <h4>Weapons</h4>
                     <label>
-                        <input type="checkbox" class="choice" id="item17">
-                        Moss
+                        <input type="checkbox" class="weapon field" id="item1-5">
+                        Spookysword
                     </label>
                     <label>
-                        <input type="checkbox" class="armor" id="item18">
+                        <input type="checkbox" class="weapon forest" id="item1-6">
+                        Ragger
+                    </label>
+                    <label>
+                        <input type="checkbox" class="weapon castle" id="item1-7">
+                        DaintyScarf
+                    </label>
+                    <label>
+                        <input type="radio" class="weapon castle" name="jevil-reward" id="item1-8">
+                        Devilsknife
+                    </label>
+                </section>
+                <section class="armor">
+                    <h4>Armor</h4>
+                    <label>
+                        <input type="checkbox" class="armor field" id="item1-9">
+                        White Ribbon
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor field" id="item1-10">
+                        Amber Cards (2+ for Silver Card)
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor forest" id="item1-11">
+                        Dice Brace
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor castle" id="item1-12">
                         IronShackle
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item19">
-                        "Bed Inspector"
+                        <input type="radio" class="armor castle" name="jevil-reward" id="item1-13">
+                        Jevilstail
+                    </label>
+                </section>
+                <section class="key">
+                    <h4>Key Items</h4>
+                    <label>
+                        <input type="checkbox" class="key field" id="item1-14">
+                        Broken Cake
                     </label>
                     <label>
-                        <input type="checkbox" class="consumable" id="item20">
-                        ReviveMint
+                        <input type="checkbox" class="key field" id="item1-15">
+                        Broken Key C
                     </label>
                     <label>
-                        <input type="checkbox" class="weapon" id="item21">
-                        Brave Ax
+                        <input type="checkbox" class="key forest" id="item1-16">
+                        Broken Key B
                     </label>
                     <label>
-                        <input type="checkbox" class="weapon" id="item22">
-                        DaintyScarf
+                        <input type="checkbox" class="key forest" id="item1-17">
+                        Egg
                     </label>
-                    <fieldset>
-                        <legend>Jevil Reward</legend>
-                        <label>
-                            <input type="radio" class="weapon" name="jevil-reward" id="item23">
-                            Devilsknife
-                        </label>
-                        <label>
-                            <input type="radio" class="armor" name="jevil-reward" id="item24">
-                            Jevilstail
-                        </label>
-                    </fieldset>
                     <label>
-                        <input type="checkbox" class="misc" id="item25">
+                        <input type="checkbox" class="key field" id="item1-18">
+                        Broken Key A
+                    </label>
+                    <label>
+                        <input type="checkbox" class="key forest" id="item1-19">
+                        Door Key
+                    </label>
+                    <label>
+                        <input type="checkbox" class="key castle" id="item1-20">
                         Shadow Crystal
                     </label>
                 </section>
-                <section class="hometown">
-                    <h4>Hometown</h4>
+                <section class="misc">
+                    <h4>Miscellaneous</h4>
                     <label>
-                        <input type="checkbox" class="choice" id="item26">
+                        <input type="checkbox" class="misc ??????" id="item1-21">
+                        Glowshard
+                    </label>
+                </section>
+                <section class="choice">
+                    <h4>Choices</h4>
+                    <label>
+                        <input type="checkbox" class="choice forest" id="item1-22">
+                        The original &emsp;Starwalker
+                    </label>
+                    <label>
+                        <input type="checkbox" class="choice castle" id="item1-23">
+                        Eat Moss
+                    </label>
+                    <label>
+                        <input type="checkbox" class="choice hometown" id="item1-24">
                         Talk to Noelle about Susie
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item27">
+                        <input type="checkbox" class="choice hometown" id="item1-25">
                         Refrigerate Egg
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item28">
+                        <input type="checkbox" class="choice hometown" id="item1-26">
                         Befriend Onion
+                    </label>
+                </section>
+                <section class="title">
+                    <h4>Titles</h4>
+                    <label>
+                        <input type="checkbox" class="title castle" id="item1-27">
+                        "Bed Inspector"
                     </label>
                 </section>
             </section>
             <section class="chapter-2">
                 <h3>Chapter 2</h3>
                 <aside>WARNING! Do not go back to sleep. This will prevent you from receiving the Light Candy.</aside>
-                <section class="Castle Town">
-                    <h4>Castle Town</h4>
+                <section class="consumable">
+                    <h4>Consumables</h4>
+                    <aside>WARNING! Do not inspect the trash cans in Cyber City if you are going for the AncientSweet. 
+                        Finding the Dark Candy or CD Bagel in the trash will prevent you from receiving it. 
+                        These choices will be remembered!</aside>
                     <label>
-                        <input type="checkbox" class="choice" id="item29">
-                        Inspect all 4 Castle Town beds
+                        <input type="checkbox" class="consumable town" id="item2-1">
+                        TensionGem
                     </label>
                     <label>
-                        <input type="checkbox" class="misc" id="item30">
-                        Complete all Dojo Battles (before and after Cyber World)
+                        <input type="checkbox" class="consumable field2" id="item2-2">
+                        TensionBit
                     </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item31">
-                        Fuse items (before and after Cyber World)
-                    </label>
-                </section>
-                <section class="field2">
-                    <h4>Cyber Field</h4>
-                    <label>
-                        <input type="checkbox" class="armor" id="item32">
-                        Glow Wrist
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item33">
-                        Fiber Scarf
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item34">
-                        Blue Checkmark 1
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item35">
-                        Blue Checkmark 2
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item36">
-                        Blue Checkmark 3
-                    </label>
-                    <label>
-                        <input type="checkbox" class="choice" id="item37">
-                        Recruit Hacker
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item38">
-                        Mecha Saber
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item39">
-                        Auto Axe
-                    </label>
-                    <label>
-                        <input type="checkbox" class="consumable" id="item40">
-                        Tension Bit
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item41">
-                        Ragger2
-                    </label>
-                </section>
-                <section class="city">
-                    <h4>Cyber City</h4>
-                    <aside>WARNING! Do not inspect the trash cans if you are going for the AncientSweet. 
-                        Finding the Dark Candy or CD Bagel in the trash will prevent you from receiving the AncientSweet. 
-                        These choices will be remembered. </aside>
-                    <label>
-                        <input type="radio" class="choice" id="item42" name="snowgrave">
-                        Proceed
-                    </label>
-                    <label>
-                        <input type="radio" class="choice" id="item43" name="snowgrave">
-                        Do not
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item44">
-                        Pink Ribbon
-                    </label>
-                    <label>
-                        <input type="checkbox" class="weapon" id="item45">
-                        Bounce Blade
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item46">
-                        Mannequin
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item47">
-                        Dog Dollar
-                    </label>
-                    <label>
-                        <input type="checkbox" class="choice" id="item48">
-                        Eat Moss with either Noelle, or come back later with Susie to change her title
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item49">
-                        Egg
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item50">
-                        FrayedBowtie
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item51">
-                        KeyGen
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item52">
-                        LoadedDisk
-                    </label>
-                </section>
-                <section class="mansion">
-                    <h4>Queen's Mansion</h4>
-                    <label>
-                        <input type="checkbox" class="armor" id="item53">
-                        Big Shot Bowtie
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item54">
-                        Royal Pin
-                    </label>
-                    <label>
-                        <input type="checkbox" class="consumable" id="item55">
+                     <label>
+                        <input type="checkbox" class="consumable mansion" id="item2-3">
                         ReviveMint
                     </label>
                     <label>
-                        <input type="checkbox" class="armor" id="item56">
+                        <input type="checkbox" class="consumable mansion" id="item2-4">
+                        ReviveDust
+                    </label>
+                </section>
+                <section class="weapon">
+                    <h4>Weapons</h4>
+                    <label>
+                        <input type="checkbox" class="weapon field2" id="item2-5">
+                        Fiber Scarf
+                    </label>
+                    <label>
+                        <input type="checkbox" class="weapon field2" id="item2-6">
+                        Mecha Saber
+                    </label>
+                    <label>
+                        <input type="checkbox" class="weapon field2" id="item2-7">
+                        Auto Axe
+                    </label>
+                    <label>
+                        <input type="checkbox" class="weapon field2" id="item2-8">
+                        Ragger2
+                    </label>
+                    <label>
+                        <input type="checkbox" class="weapon city" id="item2-9">
+                        Bounce Blade
+                    </label>
+                    <label>
+                        <input type="radio" class="weapon mansion" id="item2-10" name="spamton-reward">
+                        PuppetScarf
+                    </label>
+                </section>
+                <section class="armor">
+                    <h4>Armor</h4>
+                    <label>
+                        <input type="checkbox" class="armor field2" id="item2-11">
+                        Glow Wrist
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor city" id="item2-12">
+                        Pink Ribbon
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor city" id="item2-13">
+                        Mannequin
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor city" id="item2-14">
+                        FrayedBowtie
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor mansion" id="item2-15">
+                        Big Shot Bowtie
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor mansion" id="item2-16">
                         ChainMail
                     </label>
                     <label>
-                        <input type="checkbox" class="key" id="item57">
+                        <input type="checkbox" class="armor mansion" id="item2-17">
+                        Royal Pin
+                    </label>
+                    <label>
+                        <input type="radio" class="armor mansion" id="item2-18" name="spamton-reward">
+                        Dealmaker
+                    </label>
+                </section>
+                <section class="key">
+                    <h4>Key Items</h4>
+                    <label>
+                        <input type="checkbox" class="key city" id="item2-19">
+                        Egg
+                    </label>
+                    <label>
+                        <input type="checkbox" class="key city" id="item2-20">
+                        KeyGen
+                    </label>
+                    <label>
+                        <input type="checkbox" class="key mansion" id="item2-21">
                         EmptyDisk
                     </label>
                     <label>
-                        <input type="radio" class="weapon" id="item58" name="spamton-reward">
-                        PuppetScarf
+                        <input type="checkbox" class="key city" id="item2-22">
+                        LoadedDisk
                     </label>
                     <label>
-                        <input type="radio" class="armor" id="item59" name="spamton-reward">
-                        Dealmaker
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item60">
+                        <input type="checkbox" class="misc mansion" id="item2-23">
                         Shadow Crystal
                     </label>
+                </section>
+                <section class="misc">
+                    <h4>Miscellaneous</h4>
                     <label>
-                        <input type="checkbox" class="misc" id="item61">
+                        <input type="checkbox" class="misc field2" id="item2-24">
+                        Blue Checkmark 1
+                    </label>
+                    <label>
+                        <input type="checkbox" class="misc field2" id="item2-25">
+                        Blue Checkmark 2
+                    </label>
+                    <label>
+                        <input type="checkbox" class="misc field2" id="item2-26">
+                        Blue Checkmark 3
+                    </label>
+                    <label>
+                        <input type="checkbox" class="misc city" id="item2-27">
+                        Dog Dollar
+                    </label>
+                    <label>
+                        <input type="checkbox" class="misc mansion" id="item2-28">
                         Glowshard
                     </label>
+                </section>
+                <section class="choice">
+                    <h4>Choices</h4>
                     <label>
-                        <input type="checkbox" class="consumable" id="item62">
-                        ReviveDust
+                        <input type="checkbox" class="choice field2" id="item2-29">
+                        Recruit Hacker
+                    </label>
+                    <fieldset>
+                        <label>
+                            <input type="radio" class="choice city" id="item2-30" name="snowgrave">
+                            Proceed
+                        </label>
+                        <label>
+                            <input type="radio" class="choice city" id="item2-31" name="snowgrave">
+                            Do not
+                        </label>
+                    </fieldset>
+                    <label>
+                        <input type="checkbox" class="choice city" id="item2-32">
+                        Eat Moss with either Noelle or Susie
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item63">
+                        <input type="checkbox" class="choice mansion" id="item2-33">
                         Steal ICE-E statue
                     </label>
                     <label>
-                        <input type="checkbox" class="misc" id="item64">
-                        Inspect Noelle's bed
-                    </label>
-                </section>
-                <section class="hometown">
-                    <h4>Hometown</h4>
-                    <label>
-                        <input type="checkbox" class="choice" id="item65">
+                        <input type="checkbox" class="choice hometown" id="item2-34">
                         Meet with Onion
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item66">
+                        <input type="checkbox" class="choice hometown" id="item2-35">
                         Reverse steal Egg
+                    </label>
+                </section>
+                <section class="title">
+                    <h4>Titles</h4>
+                    <label>
+                        <input type="checkbox" class="title city" id="item2-36">
+                        "Moss Finder"
+                    </label>
+                    <label>
+                        <input type="checkbox" class="title town mansion" id="item2-37">
+                        "Bed Inspector"
                     </label>
                 </section>
             </section>
             <section class="chapter-3">
                 <h3>Chapter 3</h3>
                 <aside>Going back to sleep will not miss anything.</aside>
-                <section class="desert-board">
-                    <h4>Desert Board</h4>
+                <section class="consumable">
+                    <aside>This is your last chance to use up any items that will prevent you from receiving the AncientSweet.
+                        Ensure there are no Dark Candies, ReviveMints, ReviveDusts, Darkburgers, DD-Burgers, CD Bagels, TensionBits, TensionGems,
+                        or TensionMaxes in either inventory or storage before proceeding to Chapter 4.</aside>
+                    <h4>Consumables</h4>
                     <label>
-                        <input type="checkbox" class="misc" id="item67">
-                        Obtain fourth key
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item68">
-                        Obtain fifth key (exclusive to having a completed Chapter 3 file)
-                    </label>
-                </section>
-                <section class="green-room">
-                    <h4>Green Room</h4>
-                    <label>
-                        <input type="checkbox" class="armor" id="item69">
-                        Pink Ribbon
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item70">
-                        DogDollar
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item71">
-                        Glowshard(s)
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item72">
-                        Golden Tenna Statue
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item73">
-                        BlueRibbon
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item74">
-                        Tenna Tie
-                    </label>
-                    <label>
-                        <input type="checkbox" class="consumable" id="item75">
+                        <input type="checkbox" class="consumable green-room" id="item3-1">
                         ExecBuffet
                     </label>
                     <label>
-                        <input type="checkbox" class="consumable" id="item76">
+                        <input type="checkbox" class="consumable green-room" id="item3-2">
                         ReviveMint
                     </label>
                     <label>
-                        <input type="checkbox" class="consumable" id="item77">
+                        <input type="checkbox" class="consumable green-room" id="item3-3">
                         TensionMax
                     </label>
                     <label>
-                        <input type="checkbox" class="armor" id="item78">
-                        GingerGuard
+                        <input type="checkbox" class="consumable tv-world" id="item3-4">
+                        ReviveMint
                     </label>
                     <label>
-                        <input type="checkbox" class="armor" id="item79">
-                        LodeStone
+                        <input type="checkbox" class="consumable tv-world" id="item3-5">
+                        Pipis
                     </label>
+                </section>
+                <section class="weapon">
+                    <h4>Weapons</h4>
                     <label>
-                        <input type="checkbox" class="weapon" id="item80">
+                        <input type="checkbox" class="weapon green-room" id="item3-6">
                         ToxicAxe
                     </label>
                     <label>
-                        <input type="checkbox" class="weapon" id="item81">
+                        <input type="checkbox" class="weapon green-room" id="item3-7">
                         FlexScarf
                     </label>
                     <label>
-                        <input type="checkbox" class="weapon" id="item82">
+                        <input type="checkbox" class="weapon green-room" id="item3-8">
                         Saber10
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item83">
-                        Play Sword Route game 1
+                        <input type="checkbox" class="weapon cold" id="item3-9">
+                        BlackShard
+                    </label>
+                </section>
+                <section class="armor">
+                    <h4>Armor</h4>
+                    <label>
+                        <input type="checkbox" class="armor green-room" id="item3-10">
+                        Pink Ribbon
                     </label>
                     <label>
-                        <input type="checkbox" class="armor" id="item84">
+                        <input type="checkbox" class="armor green-room" id="item3-11">
+                        BlueRibbon
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor green-room" id="item3-12">
+                        Tenna Tie
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor green-room" id="item3-13">
+                        GingerGuard
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor green-room" id="item3-14">
+                        LodeStone
+                    </label>
+                    <label>
+                        <input type="checkbox" class="armor green-room" id="item3-15">
                         WhiteRibbon
                     </label>
                     <label>
-                        <input type="checkbox" class="choice" id="item85">
-                        Play Sword Route game 2
-                    </label>
-                    <label>
-                        <input type="checkbox" class="choice" id="item86">
-                        Play Sword Route game 3
-                    </label>
-                    <label>
-                        <input type="checkbox" class="armor" id="item87">
+                        <input type="checkbox" class="armor game" id="item3-16">
                         Shadow Mantle
                     </label>
                 </section>
-                <section class="island-board">
-                    <h4>Island Board</h4>
+                <section class="key">
+                    <h4>Key Items</h4>
                     <label>
-                        <input type="checkbox" class="misc" id="item88">
-                        Eat moss!
-                    </label>
-                    <label>
-                        <input type="checkbox" class="misc" id="item89">
-                        Take fourth photo
-                    </label>
-                </section>
-                <section class="TV World">
-                    <h4>TV World</h4>
-                    <label>
-                        <input type="checkbox" class="key" id="item90">
+                        <input type="checkbox" class="key tv-world" id="item3-17">
                         Lancer Controller
                     </label>
                     <label>
-                        <input type="checkbox" class="consumable" id="item91">
-                        ReviveMint (remember to throw the blue block across the river and between the plants!)
-                    <label>
-                        <input type="checkbox" class="consumable" id="item92">
-                        Pipis
-                    </label>
-                    <label>
-                        <input type="checkbox" class="key" id="item93">
+                        <input type="checkbox" class="key cliffs" id="item3-18">
                         TripTicket
                     </label>
                     <label>
-                        <input type="checkbox" class="key" id="item94">
+                        <input type="checkbox" class="key tv-world" id="item3-19">
                         Egg
                     </label>
-                </section>
-                <section class="cold">
-                    <h4>Cold Place</h4>
-                    <aside>This is your last chance to use up any items that will prevent you from receiving the AncientSweet.
-                        Ensure there are no Dark Candies, ReviveMints, ReviveDusts, Darkburgers, DD-Burgers, CD Bagels, TensionBits, TensionGems,
-                        or TensionMaxes in either inventory or storage before proceeding to Chapter 4.
-                    </aside>
                     <label>
-                        <input type="checkbox" class="weapon" id="item95">
-                        BlackShard
+                        <input type="checkbox" class="misc cold" id="item3-20">
+                        ShadowCrystal
+                    </label>
+                </section>
+                <section class="misc">
+                    <h4>Miscellaneous</h4>
+                    <label>
+                        <input type="checkbox" class="misc green-room" id="item3-21">
+                        DogDollar
                     </label>
                     <label>
-                        <input type="checkbox" class="misc" id="item96">
-                        ShadowCrystal
+                        <input type="checkbox" class="misc green-room" id="item3-22">
+                        Glowshard(s)
+                    </label>
+                    <label>
+                        <input type="checkbox" class="misc green-room" id="item3-23">
+                        Golden Tenna Statue
+                    </label>
+                </section>
+                <section class="choice">
+                    <h4>Choices</h4>
+                    <label>
+                        <input type="checkbox" class="choice game" id="item3-24">
+                        Play Sword Route game 1
+                    </label>
+                    <label>
+                        <input type="checkbox" class="choice game" id="item3-25">
+                        Play Sword Route game 2
+                    </label>
+                    <label>
+                        <input type="checkbox" class="choice game" id="item3-26">
+                        Play Sword Route game 3
+                    </label>
+                </section>
+                <section class="title">
+                    <h4>Titles</h4>
+                    <label>
+                        <input type="checkbox" class="title game" id="item3-27">
+                        "Blazer"
+                    </label>
+                    <label>
+                        <input type="checkbox" class="title game" id="item3-28">
+                        "Moss Mystery"
+                    </label>
+                    <label>
+                        <input type="checkbox" class="title game" id="item3-29">
+                        "Ice Blazer"
+                    </label>
+                    <label>
+                        <input type="checkbox" class="title game" id="item3-30">
+                        "Sheath"
+                    </label>
+                    <label>
+                        <input type="checkbox" class="title tv-world" id="item3-31">
+                        "Enjoying"
                     </label>
                 </section>
             </section>
             <section class="chapter-4">
-                <section>
-                    
+                <h3>Chapter 4</h3>
+                <section class="consumable">
+                    <h4>Consumables</h4>
+                </section>
+                <section class="weapon">
+                    <h4>Weapons</h4>
+                </section>
+                <section class="armor">
+                    <h4>Armor</h4>
+                </section>
+                <section class="key">
+                    <h4>Key Items</h4>
+                </section>
+                <section class="misc">
+                    <h4>Miscellaneous</h4>
+                </section>
+                <section class="choice">
+                    <h4>Choices</h4>
+                </section>
+                <section class="title">
+                    <h4>Titles</h4>
                 </section>
             </section>
         </main>
