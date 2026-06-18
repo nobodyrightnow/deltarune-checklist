@@ -49,10 +49,10 @@
             </section>
             <section class="chapter-1">
                 <h2 id="chapter-1-header">Chapter 1</h2>
-                <aside>Going back to sleep will not miss anything.</aside>
+                <aside>NOTE: Going back to sleep will not miss anything.</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
-                    <aside>WARNING! Do NOT pick Dark Candy from the Dark Candy tree in Field if you intend to go for the AncientSweet!
+                    <aside>NOTE: Do NOT pick Dark Candy from the Dark Candy tree in Field if you intend to go for the AncientSweet!
                         This choice will be remembered!</aside>
                     <label>
                         <input type="checkbox" class="consumable forest" id="item1-1">
@@ -89,8 +89,8 @@
                         <input type="checkbox" class="weapon ralsei castle" id="item1-8">
                         DaintyScarf
                     </label>
-                    <label>
-                        <input type="radio" class="weapon susie castle no-mercy" name="jevil-reward" id="item1-9">
+                    <label class="no-mercy">
+                        <input type="checkbox" class="weapon susie castle no-mercy" id="item1-9">
                         Devilsknife
                     </label>
                 </section>
@@ -112,8 +112,8 @@
                         <input type="checkbox" class="armor castle" id="item1-13">
                         IronShackle
                     </label>
-                    <label>
-                        <input type="radio" class="armor castle mercy" name="jevil-reward" id="item1-14">
+                    <label class="mercy">
+                        <input type="checkbox" class="armor castle mercy" id="item1-14">
                         Jevilstail
                     </label>
                 </section>
@@ -253,11 +253,11 @@
                         <input type="checkbox" class="consumable mansion" id="item2-2">
                         ReviveMint
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="consumable not-weird" id="item2-3">
                         ReviveDust
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="consumable town mercy" id="item2-4">
                         TensionGem
                     </label>
@@ -284,8 +284,8 @@
                         <input type="checkbox" class="weapon kris city" id="item2-9">
                         BounceBlade
                     </label>
-                    <label>
-                        <input type="radio" class="weapon ralsei mansion no-mercy" id="item2-10" name="spamton-reward">
+                    <label class="no-mercy">
+                        <input type="checkbox" class="weapon ralsei mansion no-mercy" id="item2-10">
                         PuppetScarf
                     </label>
                 </section>
@@ -303,15 +303,15 @@
                         <input type="checkbox" class="armor city" id="item2-13">
                         Pink Ribbon
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="armor city not-weird" id="item2-14">
                         Mannequin
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="armor city not-weird" id="item2-15">
                         FrayedBowtie
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="armor mansion not-weird" id="item2-16">
                         B.ShotBowtie
                     </label>
@@ -323,7 +323,7 @@
                         <input type="checkbox" class="armor city mansion" id="item2-18">
                         RoyalPin
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="radio" class="armor mansion mercy" id="item2-19" name="spamton-reward">
                         Dealmaker
                     </label>
@@ -335,26 +335,26 @@
                         <input type="checkbox" class="armor town" id="item2-21">
                         SpikeBand
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="armor town not-weird" id="item2-22">
                         TensionBow
                     </label>
                 </section>
                 <section class="key">
                     <h4>Key Items</h4>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="key city not-weird" id="item2-23">
                         Egg
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="key city not-weird" id="item2-24">
                         KeyGen
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="key mansion not-weird" id="item2-25">
                         EmptyDisk
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="key city not-weird" id="item2-26">
                         LoadedDisk
                     </label>
@@ -365,19 +365,19 @@
                 </section>
                 <section class="misc">
                     <h4>Miscellaneous</h4>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="misc field2 mercy" id="item2-28">
                         Blue Checkmark 1
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="misc field2 mercy" id="item2-29">
                         Blue Checkmark 2
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="misc field2 mercy" id="item2-26">
                         Blue Checkmark 3
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="misc city not-weird" id="item2-27">
                         DogDollar
                     </label>
@@ -388,11 +388,12 @@
                 </section>
                 <section class="choice">
                     <h4>Choices</h4>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="choice field2 mercy" id="item2-29">
                         Recruit Hacker
                     </label>
                     <fieldset>
+                        <legend>Weird Route</legend>
                         <label>
                             <input type="radio" class="choice city" id="item2-30" name="snowgrave">
                             Proceed
@@ -402,11 +403,11 @@
                             Do not
                         </label>
                     </fieldset>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="choice mansion not-weird" id="item2-32">
                         Inspect Susie-like statue
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="choice mansion not-weird" id="item2-33">
                         Steal ICE-E statue
                     </label>
@@ -414,22 +415,22 @@
                         <input type="checkbox" class="choice hometown" id="item2-34">
                         Meet with Onion
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="choice hometown not-weird" id="item2-35">
                         Reverse steal Egg
                     </label>
                 </section>
                 <section class="title">
                     <h4>Titles</h4>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="title kris city not-weird" id="item2-36">
                         "Moss Finder"
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="title susie city not-weird" id="item2-37">
                         "Moss Enjoyer"
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="title town mansion not-weird" id="item2-38">
                         "Bed Inspector"
                     </label>
@@ -452,7 +453,7 @@
                         <input type="checkbox" class="bonus town" id="item2-42">
                         Take a bite of the Ralsei Dummy
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="bonus field mercy" id="item2-43">
                         Recruit Nubert
                     </label>
@@ -464,23 +465,23 @@
                         <input type="checkbox" class="bonus city" id="item2-45">
                         Knock on the only knockable door in the city
                     </label>
-                    <label>
+                    <label class="mercy not-weird">
                         <input type="checkbox" class="bonus city mercy not-weird" id="item2-46">
                         Recruit the Tiny Cars
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="bonus mansion not-weird" id="item2-47">
                         Taunt Berdly with the blue bird
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="bonus mansion not-weird" id="item2-48">
                         Push Lancer all the way to the left
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="bonus mansion not-weird" id="item2-49">
                         Hug Ralsei on the Swan Boat before fighting Spamton NEO
                     </label>
-                    <label>
+                    <label class="not-weird">
                         <input type="checkbox" class="bonus city not-weird" id="item2-50">
                         Learn Spamton's backstory
                     </label>
@@ -496,7 +497,7 @@
                         <input type="checkbox" class="bonus hometown" id="item2-53">
                         Visit Rudy in the hospital and wash your hands
                     </label>
-                    <label>
+                    <label class="snowgrave">
                         <input type="checkbox" class="bonus hometown snowgrave" id="item2-54">
                         Approach Noelle in the hospital
                     </label>
@@ -535,7 +536,7 @@
                 <aside>Going back to sleep will not miss anything.</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
-                    <aside>This is your last chance to use up any items that will prevent you from receiving the AncientSweet.
+                    <aside>NOTE: This is your last chance to use up any items that will prevent you from receiving the AncientSweet.
                         Ensure there are no Dark Candies, ReviveMints, ReviveDusts, Darkburgers, DD-Burgers, CD Bagels, TensionBits, TensionGems,
                         or TensionMaxes in either inventory or storage before proceeding to Chapter 4.</aside>
                     <label>
@@ -615,11 +616,11 @@
                         <input type="checkbox" class="key tv-world" id="item3-17">
                         LancerCon
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="key cliffs mercy" id="item3-18">
                         TripTicket
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="key tv-world mercy" id="item3-19">
                         Egg
                     </label>
@@ -676,7 +677,7 @@
                         <input type="checkbox" class="title kris game" id="item3-30">
                         "Sheath"
                     </label>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="title kris tv-world mercy" id="item3-31">
                         "Enjoying"
                     </label>
@@ -715,7 +716,7 @@
             </section>
             <section class="chapter-4">
                 <h2 id="chapter-4-header">Chapter 4</h2>
-                <aside>WARNING! Do not go back to sleep! You will miss the AncientSweet and JingleBlade!</aside>
+                <aside>NOTE: Do not go back to sleep! You will miss the AncientSweet and JingleBlade!</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
                     <label>
@@ -801,118 +802,126 @@
                 </section>
                 <section class="choice">
                     <h4>Choices</h4>
-                    <label>
+                    <label class="mercy">
                         <input type="checkbox" class="choice hometown mercy" id="item4-18">
                         Gift Tenna to the nobody
                     </label>
+                    <label class="no-mercy">
+                        <input type="checkbox" class="choice hometown no-mercy" id="item4-19">
+                        Visit Berdly in the hospital
+                    </label>
+                    <label class="snowgrave">
+                        <input type="checkbox" class="choice hometown snowgrave" id="item4-20">
+                        Turn Berdly's heater up
+                    </label>
                     <label>
-                        <input type="checkbox" class="choice town" id="item4-19">
+                        <input type="checkbox" class="choice town" id="item4-21">
                         See Ralsei's room
                     </label>
                     <label>
-                        <input type="checkbox" class="choice sanct1" id="item4-20">
+                        <input type="checkbox" class="choice sanct1" id="item4-22">
                         Steal ladder for Ralsei's room
                     </label>
                     <label>
-                        <input type="checkbox" class="choice sanct1" id="item4-21">
+                        <input type="checkbox" class="choice sanct1" id="item4-23">
                         Steal couch cushion for Ralsei's room
                     </label>
                 </section>
                 <section class="title">
                     <h4>Titles</h4>
-                    <label>
-                        <input type="checkbox" class="title kris sanct2 mercy" id="item4-22">
+                    <label class="mercy">
+                        <input type="checkbox" class="title kris sanct2 mercy" id="item4-24">
                         "Moss Most"
                     </label>
                 </section>
                 <section class="bonus">
                     <h4>Bonus</h4>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-23">
+                        <input type="checkbox" class="bonus hometown" id="item4-25">
                         Get the Susie Prize
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-24">
+                        <input type="checkbox" class="bonus hometown" id="item4-26">
                         Clean up the bloodstain
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-25">
+                        <input type="checkbox" class="bonus hometown" id="item4-27">
                         Visit Rudy and wash your hands
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-26">
+                        <input type="checkbox" class="bonus hometown" id="item4-28">
                         Buy the special at QC's Diner with Susie
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-27">
+                        <input type="checkbox" class="bonus hometown" id="item4-29">
                         Get ragebaited by Sans
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-28">
+                        <input type="checkbox" class="bonus hometown" id="item4-30">
                         Talk to Napstablook
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-29">
+                        <input type="checkbox" class="bonus hometown" id="item4-31">
                         Talk to Pizzapants before and after visiting Noelle
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-30">
+                        <input type="checkbox" class="bonus hometown" id="item4-32">
                         Visit Onion's lake with Susie before and after the dark world
                     </label>
-                    <label>
-                        <input type="checkbox" class="bonus hometown not-weird" id="item4-31">
+                    <label class="not-weird">
+                        <input type="checkbox" class="bonus hometown not-weird" id="item4-33">
                         Talk to Berdly on Noelle's phone
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-32">
+                        <input type="checkbox" class="bonus hometown" id="item4-34">
                         See what Asgore is up to twice in the Holiday home as the SOUL
                     </label>
-                    <label>
-                        <input type="checkbox" class="bonus hometown not-weird" id="item4-33">
+                    <label class="not-weird">
+                        <input type="checkbox" class="bonus hometown not-weird" id="item4-35">
                         Listen to all of Noelle and Susie's dialogue as the SOUL
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus sanct1" id="item4-34">
+                        <input type="checkbox" class="bonus sanct1" id="item4-36">
                         Take too many Darker Candies and make Ralsei help Susie out
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus sanct1" id="item4-35">
+                        <input type="checkbox" class="bonus sanct1" id="item4-37">
                         Spy on Susie and Ralsei through the telescope
                     </label>
-                    <label>
-                        <input type="checkbox" class="bonus sanct1 snowgrave" id="item4-36">
-                        Think about Noelle
+                    <label class="snowgrave">
+                        <input type="checkbox" class="bonus sanct1 snowgrave" id="item4-38">
+                        Close your eyes and think about Noelle
                     </label>
-                    <label>
-                        <input type="checkbox" class="bonus hometown snowgrave" id="item4-37">
+                    <label class="snowgrave">
+                        <input type="checkbox" class="bonus hometown snowgrave" id="item4-39">
                         Pray for Noelle
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-38">
+                        <input type="checkbox" class="bonus hometown" id="item4-40">
                         Play the piano and listen to Susie's story
                     </label>
-                    <label>
-                        <input type="checkbox" class="bonus hometown snowgrave" id="item4-39">
+                    <label class="snowgrave">
+                        <input type="checkbox" class="bonus hometown snowgrave" id="item4-41">
                         Tell Susie you'll never play again
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus hometown" id="item4-40">
+                        <input type="checkbox" class="bonus hometown" id="item4-42">
                         Discover Jackenstein's light world form
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus sanct2" id="item4-41">
+                        <input type="checkbox" class="bonus sanct2" id="item4-43">
                         Wash your hands after getting the Egg
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus sanct1" id="item4-42">
+                        <input type="checkbox" class="bonus sanct1" id="item4-44">
                         Revisit the pink and green piano puzzle room if you didn't tell Ralsei to park his butt
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus sanct3" id="item4-43">
+                        <input type="checkbox" class="bonus sanct3" id="item4-45">
                         Try to backtrack after Susie shatters the prophecy
                     </label>
                     <label>
-                        <input type="checkbox" class="bonus town" id="item4-44">
+                        <input type="checkbox" class="bonus town" id="item4-46">
                         Battle Mike(s)
                     </label>
                 </section>
