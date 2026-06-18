@@ -75,3 +75,11 @@ function getWeird() {
 proceed.addEventListener("change", getWeird);
 doNotProceed.addEventListener("change", getWeird);
 
+
+
+
+// run once the page loads
+bonusVisibility();
+changeRoute();
+getWeird();
+
