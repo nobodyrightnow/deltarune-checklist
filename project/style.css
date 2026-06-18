@@ -46,6 +46,10 @@ img {
     max-height: 50px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (min-width: 484px) {
     h2 {
       scroll-margin-top: 59px;  
