@@ -3,13 +3,80 @@
     font-family: Determination;
 }
 
-main {
-    padding: 50px;
+main, header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-header, nav, .chapter-1, .chapter-2, .chapter-3, .chapter-4, .chapter-5, footer {
+main {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 10vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1rem, 6.5vw, 2.5rem);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+    margin: 15px;
+}
+
+fieldset {
+    max-width: 500px;
+    width: 100%;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside {
+    min-width: 0;
+    font-size: clamp(0.5rem, 5vw, 0.75rem);
+    max-width: 500px;
+}
+
+aside, h5 {
+    color: yellow;
+    text-align: center;
+}
+
+label {
+    font-size: clamp(0.75rem, 3vw, 2rem);
+    display: flex;
+}
+
+header, nav, .chapter-1, .chapter-2, .chapter-3, .chapter-4, .chapter-5, .chapter-6, .chapter-7, .settings, footer {
     border: solid 2px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+section {
+    padding-bottom: 16px;
+    max-width: 785px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section h4, section label, section input {
+    align-self: flex-start;
 }
 
 .consumable, .weapon, .key, .armor, .choice, .misc, .title, .bonus {
@@ -23,9 +90,13 @@ header, nav, .chapter-1, .chapter-2, .chapter-3, .chapter-4, .chapter-5, footer 
 nav {
     position: sticky;
     top: 0;
+    padding: 10px 0;
     text-align: center;
     z-index: 1000;
     background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
 }
 
 header h1 {
@@ -40,18 +111,10 @@ body {
     background-color: black;
 }
 
-label {
-    display:flex;
-}
-
 a {
     display: inline-block;
     margin-left: 10px;
     text-decoration: none;
-}
-
-input[type="checkbox"] {
-    accent-color: yellow;
 }
 
 a:hover {
@@ -60,14 +123,6 @@ a:hover {
 
 a:hover h3, label:hover {
     color:yellow;
-}
-
-h5, aside {
-    color: yellow;
-}
-
-h1, h2, h5, aside {
-    text-align:center;
 }
 
 img {
@@ -79,237 +134,92 @@ img {
     display: none;
 }
 
-main {
-    padding-top: 0;
+label::after {
+    content: "";
+    display:inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-left: 8px; 
 }
 
 
 label.kris::after {
-    content: "";
-    display:inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Kris_face_battlemenu.png?cb=g9uj7d&h=thumb.php&f=Kris_face_battlemenu.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px; 
 }
 
 label.ralsei::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Ralsei_face_battlemenu.png?cb=t0bcnp&h=thumb.php&f=Ralsei_face_battlemenu.png&20220213004550");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.susie::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Susie_face_battlemenu.png?cb=rbu60a&h=thumb.php&f=Susie_face_battlemenu.png&20220213012129");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.game::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Kris_overworld_8bit_pose.png?cb=8rdcs9&h=thumb.php&f=Kris_overworld_8bit_pose.png&20260125171612");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.green-room::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Green_Room_location.png?cb=bu673h&h=thumb.php&f=Green_Room_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.hometown::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Dreemurr_residence_location.png?cb=b1g6l9&h=thumb.php&f=Dreemurr_residence_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.town::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Castle_Town_location.png?cb=oswrg9&h=thumb.php&f=Castle_Town_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.cliffs::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/%3F%3F%3F%3F%3F%3F_location_Eye_Puzzle.png?cb=fm5lf9&h=thumb.php&f=%3F%3F%3F%3F%3F%3F_location_Eye_Puzzle.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.field::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("res/purple_grass.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.forest::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("res/Man_overworld_tree.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.castle::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Card_Castle_location.png?cb=lcsf4t&h=thumb.php&f=Card_Castle_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.field2::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/thumb/Cyber_Field_location.png/300px-Cyber_Field_location.png.webp?cb=42iugz&h=thumb.php&f=Cyber_Field_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.city::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/thumb/Cyber_City_location.png/300px-Cyber_City_location.png.webp?cb=56eezl&h=thumb.php&f=Cyber_City_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.mansion::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Queen_face.png?cb=dxd14v&h=thumb.php&f=Queen_face.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.tv-world::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("res/tv-world.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.cold::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Cold_Place_location.png?cb=azpbw2&h=thumb.php&f=Cold_Place_location.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.sanct1::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Prophecy_screenshot_initial1.png?cb=lwc66i&h=thumb.php&f=Prophecy_screenshot_initial1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.sanct2::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Prophecy_screenshot_heroes1_2nd_Sanctuary.png?cb=7hrfko&h=thumb.php&f=Prophecy_screenshot_heroes1_2nd_Sanctuary.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 label.sanct3::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background-image: url("https://deltarune.wiki/images/Prophecy_screenshot_end.png?cb=mjscbx&h=thumb.php&f=Prophecy_screenshot_end.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 4.5px;
-    margin-left: 5px;
 }
 
 footer img {
@@ -317,18 +227,45 @@ footer img {
     margin: 10px;
     max-height: 40px;
 }
+
 footer a {
-    display:flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
     font-size: 15px;
 }
+
 footer {
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: black;
     width: 100%;
+}
+
+input {
+    appearance: none;
+    background-color: black;
+    width: 32px;
+    height: 32px;
+    border: 4px solid white;
+    position: relative;
+}
+
+input:hover {
+    border-color: yellow;
+}
+
+input:checked::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
