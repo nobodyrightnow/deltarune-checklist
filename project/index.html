@@ -9,22 +9,22 @@
     <body>
         <header>
             <h1>DELTARUNE</h1>
-            <h2>Completionist Tracker</h2>
+            <h2>Completionist Checklist</h2>
             <h5>MAJOR SPOILERS AHEAD</h5>
         </header>
         <nav class="chapter-select">
-                <a href="#settings-header"><h3>Settings</h3></a>
-                <a href="#chapter-1-header"><h3>Chapter 1</h3></a>
-                <a href="#chapter-2-header"><h3>Chapter 2</h3></a>
-                <a href="#chapter-3-header"><h3>Chapter 3</h3></a>
-                <a href="#chapter-4-header"><h3>Chapter 4</h3></a>
-                <a href="#chapter-5-header"><h3>Chapter 5</h3></a>
-                <a href="#chapter-6-header"><h3>Chapter 6</h3></a>
-                <a href="#chapter-7-header"><h3>Chapter 7</h3></a>
+                <a href="#settings"><h3>Settings</h3></a>
+                <a href="#chapter-1"><h3>Chapter 1</h3></a>
+                <a href="#chapter-2"><h3>Chapter 2</h3></a>
+                <a href="#chapter-3"><h3>Chapter 3</h3></a>
+                <a href="#chapter-4"><h3>Chapter 4</h3></a>
+                <a href="#chapter-5"><h3>Chapter 5</h3></a>
+                <a href="#chapter-6"><h3>Chapter 6</h3></a>
+                <a href="#chapter-7"><h3>Chapter 7</h3></a>
             </nav>
         <main>
-            <section class="settings">
-                <h2 id="settings-header">Settings</h2>
+            <section class="settings" id="settings">
+                <h2>Settings</h2>
                 <fieldset>
                     <legend>Show Mercy?</legend>
                     <label>
@@ -47,9 +47,13 @@
                         No
                     </label>
                 </fieldset>
+                <label id="reset-label">
+                    <input type="button" id="reset-button">
+                    RESET PAGE
+                </label>
             </section>
-            <section class="chapter-1">
-                <h2 id="chapter-1-header">Chapter 1</h2>
+            <section class="chapter" id="chapter-1">
+                <h2>Chapter 1</h2>
                 <aside>NOTE: Going back to sleep will not miss anything.</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
@@ -238,8 +242,8 @@
                     </label>
                 </section>
             </section>
-            <section class="chapter-2">
-                <h2 id="chapter-2-header">Chapter 2</h2>
+            <section class="chapter" id="chapter-2">
+                <h2>Chapter 2</h2>
                 <aside>NOTE: Do not go back to sleep. This will prevent you from receiving the Light Candy.</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
@@ -532,9 +536,9 @@
                     </label>
                 </section>
             </section>
-            <section class="chapter-3">
-                <h2 id="chapter-3-header">Chapter 3</h2>
-                <aside>Going back to sleep will not miss anything.</aside>
+            <section class="chapter" id="chapter-3">
+                <h2>Chapter 3</h2>
+                <aside>NOTE: Going back to sleep will not miss anything.</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
                     <aside>NOTE: This is your last chance to use up any items that will prevent you from receiving the AncientSweet.
@@ -715,8 +719,8 @@
                     </label>
                 </section>
             </section>
-            <section class="chapter-4">
-                <h2 id="chapter-4-header">Chapter 4</h2>
+            <section class="chapter" id="chapter-4">
+                <h2>Chapter 4</h2>
                 <aside>NOTE: Do not go back to sleep! You will miss the AncientSweet and JingleBlade!</aside>
                 <section class="consumable">
                     <h4>Consumables</h4>
@@ -927,22 +931,21 @@
                     </label>
                 </section>
             </section>
-            <section class="chapter-5">
-                <h2 id="chapter-5-header">Chapter 5</h2>
+            <section class="chapter" id="chapter-5">
+                <h2>Chapter 5</h2>
                 <h5>COMING SOON</h5>
             </section>
-            <section class="chapter-6">
-                <h2 id="chapter-6-header">Chapter 6</h2>
+            <section class="chapter" id="chapter-6">
+                <h2>Chapter 6</h2>
                 <h5>COMING SOON?</h5>
             </section>
-            <section class="chapter-7">
-                <h2 id="chapter-7-header">Chapter 7</h2>
+            <section class="chapter" id="chapter-7">
+                <h2>Chapter 7</h2>
                 <h5>COMING</h5>
             </section>
         </main>
         <footer>
             <a href="https://github.com/nobodyrightnow/deltarune-tracker" title="Report bugs and give suggestions!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/250px-Octicons-mark-github.svg.png">nobodyrightnow</a>
-            <input type="button" id="reset">
         </footer>
     </body>
 </html>
