@@ -1,3 +1,4 @@
+// show/hide bonus stuff
 const showBonus = document.getElementById("item0-3");
 const hideBonus = document.getElementById("item0-4");
 
@@ -44,6 +45,7 @@ function changeRoute() {
         });
     }
 }
+
 mercyRoute.addEventListener("change", changeRoute);
 noMercyRoute.addEventListener("change", changeRoute);
 
@@ -73,6 +75,7 @@ function getWeird() {
         });
     }
 }
+
 proceed.addEventListener("change", getWeird);
 doNotProceed.addEventListener("change", getWeird);
 
@@ -105,12 +108,44 @@ function resetInputs() {
             inp.checked = false;
         }
     });
+    // CLEAR LOCAL STORAGE or else it will load the old values
+    localStorage.clear();
 }
 reset.addEventListener("click", resetInputs);
 
+// SAVE TO LOCAL STORAGE
 
-// run once the page loads
-bonusVisibility();
-changeRoute();
-getWeird();
+// checkboxes
+document.querySelectorAll('input[type="checkbox"]').forEach(inp => {
+    inp.addEventListener("change", () => {
+        localStorage.setItem(inp.id, inp.checked);
+    });
+});
+// radios
+document.querySelectorAll('input[type="radio"]').forEach(inp => {
+    inp.addEventListener("change", () => {
+        if (inp.checked) {
+            localStorage.setItem(inp.name, inp.value);
+        }
+    });
+});
 
+// LOAD FROM LOCAL STORAGE
+window.addEventListener('DOMContentLoaded', () => {
+    // checkboxes
+    document.querySelectorAll('input[type="checkbox"]').forEach(inp => {
+        const saved = localStorage.getItem(inp.id);
+        // check to see if there are any saved items
+        if (saved !== null) {
+            inp.checked = (saved === 'true');
+        }
+    });
+    // radios
+    document.querySelectorAll('input[type="radio"]').forEach(inp => {
+        const saved = localStorage.getItem(inp.name);
+        // console.log(inp.name, inp.value, saved);
+        if (inp.value === saved) {
+            inp.checked = true;
+        }
+    })
+});
